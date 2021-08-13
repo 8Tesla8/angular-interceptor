@@ -1,3 +1,19 @@
-<ul>
-  <li *ngFor="let post of data$ | async">{{post.title}}</li>
-</ul>
+<div>
+  <span> Website</span>
+  <input [(ngModel)]="website" type="text" placeholder="hours">  
+</div>
+
+<div>
+  <span> Header</span>
+  <input [(ngModel)]="header" type="text" placeholder="hours">
+</div>
+
+<div>
+  <span> header value</span>
+  <input [(ngModel)]="headerValue" type="text" placeholder="hours">
+  
+</div>
+
+<button (click)="makeRequest()">
+ Make request
+</button>
